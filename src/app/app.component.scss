@@ -1,0 +1,20 @@
+header {
+  padding: 1rem;
+  background: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  & a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: 0.5s;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  & h4 {
+    color: var(--primary);
+  }
+  & .ativo {
+    display: none;
+  }
+}

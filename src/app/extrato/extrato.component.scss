@@ -1,0 +1,43 @@
+.tabela {
+  text-align: center;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+
+  &__cabecalho {
+    color: var(--primary);
+
+    &__conteudo {
+      padding: 10px;
+      border-bottom: 2px solid var(--primary);
+    }
+  }
+
+  &__linha {
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+    &:last-child {
+      .tabela__conteudo {
+        border-bottom: none;
+      }
+    }
+  }
+  &__conteudo {
+    padding: 10px;
+    border-bottom: 1px solid var(--cinza-claro);
+  }
+}
+
+td {
+  color: var(--primary);
+}
+
+.titulo-extrato {
+  text-align: center;
+  margin: 1.5rem 0;
+  & h1 {
+    color: #fff;
+  }
+}

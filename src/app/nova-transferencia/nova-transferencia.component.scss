@@ -1,0 +1,72 @@
+.banco {
+  text-align: center;
+  margin-bottom: 2rem;
+  &__titulo {
+    color: #fff;
+  }
+}
+
+.formulario {
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  &__titulo {
+    text-transform: capitalize;
+    color: var(--primary);
+  }
+}
+
+.form-field {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  color: var(--primary);
+
+  &__label {
+    color: inherit;
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+
+  &__input {
+    padding: 8px;
+    border-radius: 4px;
+    color: inherit;
+    border: 2px solid #ccc;
+    outline: none;
+    &:focus {
+      border: 2px solid var(--primary);
+      box-shadow: 0 0 0 0.2rem rgb(141 0 141 / 15%);
+    }
+  }
+}
+
+.botao-wrapper {
+  display: flex;
+}
+
+.botao {
+  background-color: #fff;
+  color: var(--primary);
+  display: block;
+  flex: 1;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+
+  &--cancelar {
+    background-color: var(--secondary);
+    margin-left: 20px;
+  }
+
+  &:hover {
+    background-color: var(--primary);
+    color: #fff;
+  }
+}
